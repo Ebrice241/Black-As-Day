@@ -200,4 +200,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
+  - jekyll-paginate
 
