@@ -1,165 +1,137 @@
-# The Site Configuration
+# Configuration du site
 
-# Import the theme
+# Importer le thème
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# Langue du site › http://www.lingoes.net/en/translator/langcode.htm
+# Si elle correspond à un fichier dans le dossier `_data/locales`, la langue de l'interface sera changée,
+# sinon, la langue par défaut sera l'anglais ('en').
 lang: fr
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+# Définir votre fuseau horaire › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Africa/Ouagadougou
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# Paramètres de jekyll-seo-tag › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Black As Day # the main title
+title: Black As Day # titre principal
 
-tagline: Pour ceux qui veulent comprendre, construire et transmettre # it will display as the subtitle
+tagline: Pour ceux qui veulent comprendre, construire et transmettre. # sous-titre affiché
 
-description: >- # used by seo meta and the atom feed
+description: >-
   Ce blog existe pour informer la jeunesse africaine et éclairer les générations futures. Nous explorons le passé, le présent et l’avenir pour nourrir la vérité et laisser une trace.
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
+# Renseignez le protocole et le nom d'hôte de votre site.
+# Exemple : 'https://utilisateur.github.io' — ne pas inclure de '/' à la fin.
 url: "https://ebrice241.github.io/Black-As-Day/"
 
 github:
-  username: Ebrice241 # change to your GitHub username
+  username: github_username # remplacez par votre nom d'utilisateur GitHub
 
 twitter:
-  username: Ebrice241_CLONE # change to your Twitter username
+  username: twitter_username # remplacez par votre nom d'utilisateur Twitter
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  # Remplacez par votre nom complet.
+  # Il s'affichera comme auteur par défaut des articles et comme détenteur des droits d'auteur dans le pied de page
   name: Ebrice241
-  email: ebrice241@gmail.com # change to your email address
+  email: contact@example.com # remplacez par votre adresse email
   links:
-    # The first element serves as the copyright owner's link
-    - https://x.com/Ebrice241_CLONE?t=nsfHY7ed_UiswXnSV-hFZw&s=09 # change to your Twitter homepage
-    - https://github.com/Ebrice241 # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/Ebrice241_CLONE
+    - https://github.com/github_username
 
-# Site Verification Settings
+# Paramètres de vérification du site
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# Fin des paramètres jekyll-seo-tag
 
-# Web Analytics Settings
+# Paramètres d'analyse Web
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id:
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id:
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id:
+    domain:
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id:
+    domain:
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id:
   fathom:
-    id: # fill in your Fathom Site ID
+    id:
 
-# Page views settings
+# Paramètres de vues des pages
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider:
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
-theme_mode: # [light | dark]
+# Préférence de thème (clair/sombre).
+# Laisser vide suit la préférence système avec un bouton pour changer le thème.
+# Options disponibles : light | dark
+theme_mode:
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
+# CDN pour les ressources médias.
 cdn: "https://chirpy-img.netlify.app"
 
-# the avatar on sidebar, support local or CORS resources
+# Avatar dans la barre latérale, supporte les ressources locales ou CORS
 avatar: "/commons/avatar.jpg"
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+# Image de prévisualisation utilisée dans les métadonnées SEO `og:image`
+social_preview_image:
 
-# boolean type, the global switch for TOC in posts.
+# Activer ou non la table des matières (TOC) dans les articles.
 toc: true
 
 comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
+  provider:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
+    shortname:
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
+    repo:
+    issue_term:
   giscus:
-    repo: # <gh-username>/<repo>
+    repo:
     repo_id:
     category:
     category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+# Hébergement de ressources statiques auto-hébergées › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    enabled:
+    env:
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: true # activer la fonctionnalité PWA (installable)
   cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
+    enabled: true # activer le cache hors-ligne PWA
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
 
-# The base URL of your site
+# Base URL du site
 baseurl: ""
 
-# ------------ The following options are not recommended to be modified ------------------
+# ------------ Options suivantes déconseillées à modifier ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -173,14 +145,12 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -188,7 +158,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs
     values:
       layout: page
       permalink: /:title/
@@ -229,3 +199,5 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-archives
+
