@@ -6,40 +6,40 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: fr
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
+timezone: Africa/Ouagadougou
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Black As Day # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Pour ceux qui veulent comprendre, construire et transmettre # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Ce blog existe pour informer la jeunesse africaine et éclairer les générations futures. Nous explorons le passé, le présent et l’avenir pour nourrir la vérité et laisser une trace.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://ebrice241.github.io/Black-As-Day/"
 
 github:
-  username: github_username # change to your GitHub username
+  username: Ebrice241 # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: Ebrice241_CLONE # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Ebrice241
+  email: ebrice241@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://x.com/Ebrice241_CLONE?t=nsfHY7ed_UiswXnSV-hFZw&s=09 # change to your Twitter homepage
+    - https://github.com/Ebrice241 # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -224,3 +224,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
